@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/',methods = ['POST'])
 def run_stress_cpu():
-   p = subprocess.Popen(["python3", stress_cpu.py], stdout=subprocess.PIPE)
+   p = subprocess.Popen(["python3", "stress_cpu.py"], stdout=subprocess.PIPE)
 
 @app.route('/',methods = ['GET'])
 def get_seed():
